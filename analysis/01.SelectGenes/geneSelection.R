@@ -28,7 +28,7 @@ if(length(commandArgs(trailingOnly=TRUE))==0){
 
 
 if (start == 1){
-    # this is a quick way to select "goog enough" markers without doing permutations
+    # this is a quick way to select "good enough" markers without doing permutations
     # output of this will not be robust to outliers. These genes are not used in the study
     # and are not readily available in the package
     markerCandidates(design = n_expressoSamples,
@@ -161,7 +161,7 @@ if(end == 500){
             }
         }
     }
-    # here we do some wrangling of the gene list to deatl with astrocytes and microglia
+    # here we do some wrangling of the gene list to deal with astrocytes and microglia
     
     # number of genes removed from microglia is needed in the paper
     genes = pickMarkersAll('analysis//01.SelectGenes/FinalGenes1/PyramidalDeep/')
